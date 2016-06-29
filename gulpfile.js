@@ -16,7 +16,7 @@ gulp.task('rebuild-js', ['bundle-js'], browserSync.reload);
 
 gulp.task('watch-files', function() {
     gulp.watch([
-        'client/*.html',
+        'client/src/**/*.html',
         'client/assets/css/*.css'
     ], ['reload']);
     gulp.watch(['client/src/**/*.js'], ['rebuild-js']);
